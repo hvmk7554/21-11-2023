@@ -1,0 +1,78 @@
+svg#freepik_stories-404-error:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-404-error.animated #freepik--Hole--inject-43 {
+  animation: 3s Infinite linear wind;
+  animation-delay: 0s;
+}
+svg#freepik_stories-404-error.animated #freepik--Character--inject-43 {
+  animation: 1s 1 forwards ease-in slideLeft;
+  animation-delay: 0s;
+}
+svg#freepik_stories-404-error.animated #freepik--Text--inject-43 {
+  animation: 1.4s 1 forwards ease-out lightSpeedLeft,
+    3s Infinite linear heartbeat;
+  animation-delay: 1s, 2.4s;
+  opacity: 0;
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: skewX(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
